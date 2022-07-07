@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "rpungello/tcpdf-table",
+    "description": "Table generation for TCPDF library",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "rpungello",
+        "tcpdf-table"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/rpungello/tcpdf-table",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Rob Pungello",
+            "email": "rob.pungello@gmail.com",
             "role": "Developer"
         }
     ],
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Rpungello\\TcpdfTable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Rpungello\\TcpdfTable\\Tests\\": "tests"
         }
     },
     "scripts": {
