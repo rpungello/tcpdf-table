@@ -2,6 +2,6 @@
 
 namespace Rpungello\TcpdfTable;
 
-class TcpdfTableClass
+class Table
 {
 }
