@@ -15,11 +15,13 @@ class Writer
         $width = $width ?: $this->document->getPageWidth();
         $totalWeight = $table->getTotalWeight();
 
-        if ($table->hasHead())
+        if ($table->hasHead()) {
             $this->writeSection($table, $table->getHead(), $totalWeight);
+        }
 
-        if ($table->hasBody())
+        if ($table->hasBody()) {
             $this->writeSection($table, $table->getBody(), $totalWeight);
+        }
     }
 
     protected function writeSection(Table $table, Section $section, int $totalWeight): void

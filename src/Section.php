@@ -36,8 +36,10 @@ abstract class Section implements Countable
     public function getNumberOfColumns(): int
     {
         $numberOfColumns = 0;
-        foreach ($this->rows as $row)
+        foreach ($this->rows as $row) {
             $numberOfColumns = max($numberOfColumns, count($row));
+        }
+
         return $numberOfColumns;
     }
 }

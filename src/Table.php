@@ -39,7 +39,7 @@ class Table
 
     public function hasHead(): bool
     {
-        return !$this->head->isEmpty();
+        return ! $this->head->isEmpty();
     }
 
     public function getHead(): Head
@@ -49,7 +49,7 @@ class Table
 
     public function hasBody(): bool
     {
-        return !$this->body->isEmpty();
+        return ! $this->body->isEmpty();
     }
 
     public function getBody(): Body
@@ -75,10 +75,11 @@ class Table
 
     public function getWeightForColumnIndex(int $index): float
     {
-        if (count($this->weights) > $index)
+        if (count($this->weights) > $index) {
             return $this->weights[$index];
-        else
+        } else {
             return 1;
+        }
     }
 
     public function setGlobalColumnWeights(array $weights): void
